@@ -46,6 +46,36 @@
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
+
+        .bloque2 {
+    background: #dde6df;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    display: flex; /* Añadido */
+    flex-direction: column; /* Asegura que los elementos se coloquen en columna */
+    justify-content: center; /* Centra verticalmente */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.titulo2 {
+    background-color: #1f7522;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 80%; /* Cambiado a porcentaje */
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 auto; /* Centra horizontalmente el elemento */
+}
+
+        .bloque2:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }      
         .titulo {
             background-color: #1f7522;
             color: rgb(255, 255, 255);
@@ -56,16 +86,7 @@
             font-weight: bold;
             font-size: 1.2rem;
         }
-        .titulo2 {
-            background-color: #1f7522;
-            color: rgb(255, 255, 255);
-            padding: 10px;
-            width: 500px;
-            margin-left: 125px;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
+
         .contenido {
             display: none;
             margin-top: 10px;
@@ -151,7 +172,7 @@
                 Los gobiernos tienen un papel importante para propiciar el cambio de modelo económico. Por una parte, pueden promover el desarrollo económico sostenible, por otra pueden prohibir o limitar ciertas acciones y materiales.
             </div>
             
-            <div class="bloque" style="height: auto; width: auto;" onclick="toggleContenido(this)">
+            <div class="bloque2"  onclick="toggleContenido(this)">
                 <div class="titulo2">Prohibir</div>
                 <div class="contenido">
                     <ul>
@@ -178,7 +199,7 @@
             <div class="contenido">
 
             </div>
-            <div class="bloque" onclick="toggleContenido(this)">
+            <div class="bloque2" onclick="toggleContenido(this)">
                 <div class="titulo2">Reducir</div>
                 <div class="contenido">
                     <ul>
@@ -187,7 +208,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="bloque" onclick="toggleContenido(this)">
+            <div class="bloque2" onclick="toggleContenido(this)">
                 <div class="titulo2">Reciclar</div>
                 <div class="contenido">
                     <ul>
@@ -196,7 +217,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="bloque" onclick="toggleContenido(this)">
+            <div class="bloque2" onclick="toggleContenido(this)">
                 <div class="titulo2">Reutilizar</div>
                 <div class="contenido">
                     <ul>
